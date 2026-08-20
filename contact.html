@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Archenaa J | Get in Touch</title>
+  <meta name="description" content="Contact Archenaa J for research discussion, knowledge exchange, and potential collaboration in AI, software testing, and healthcare technology.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+</head>
+<body>
+
+  <!-- Header (rendered by components.js) -->
+  <div id="site-header"></div>
+
+
+  <!-- ============================================================
+       CONTACT SECTION (inline form — no CTA band on this page)
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Correspondence</div>
+      <h2>Contact</h2>
+
+      <div class="contact-grid" style="margin-top: 40px;">
+
+        <!-- Left: info -->
+        <div class="contact-info">
+          <p>
+            For research discussion, knowledge exchange, and potential collaboration.
+          </p>
+          <div class="contact-name">Archenaa J</div>
+          <a href="mailto:saiarchenaastudy@gmail.com" class="contact-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            saiarchenaastudy@gmail.com
+          </a>
+        </div>
+
+        <!-- Right: inline contact form -->
+        <div>
+          <form class="contact-form" action="contact-handler.php" method="POST" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" required autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" required autocomplete="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" required placeholder="Your message…"></textarea>
+            </div>
+            <!-- Honeypot field — hidden from real users -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="contact-website">Website</label>
+              <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn">Send Message ✉</button>
+            <div class="form-message"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer (rendered by components.js) -->
+  <div id="site-footer"></div>
+
+
+  <!-- Modal (rendered by components.js) -->
+  <div id="site-modal"></div>
+
+  <script src="components.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
